@@ -2,6 +2,7 @@
 .c-chart {
     @include e-card;
     width: 100%;
+    padding-top: spacing("normal");
 }
 
 .c-chart__header {
@@ -9,6 +10,8 @@
     align-items: center;
     justify-content: space-between;
     padding: 0 spacing("normal");
+    flex-wrap: wrap;
+    margin-bottom: spacing("small");
 }
 
 
@@ -21,3 +24,4 @@
     padding: spacing("small");
     --color-brand: #2541b2
 }
+

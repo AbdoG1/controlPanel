@@ -3,6 +3,7 @@
     display: inline-flex;
     align-items: center;
     padding: spacing("small") spacing("wide");
+    flex-wrap: wrap;
 }
 
 .c-summary__data {
@@ -33,15 +34,20 @@
     font-weight: 600;
 }
 
-.c-summary__boxless {
+.c-summary--boxless {
     box-shadow: none;
     border-bottom: 0;
     background: none;
 }
 
-.c-summary__small {
+.c-summary--small {
     .c-summary__key, .c-summary__value {
         font-size: 13px;
         font-weight: normal;
     }
+}
+
+.c-summary--spaceless {
+    padding-left: 0;
+    padding-right: 0;
 }
